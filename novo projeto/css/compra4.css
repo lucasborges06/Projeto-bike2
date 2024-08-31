@@ -1,0 +1,161 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.payment-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.payment-container:hover {
+    transform: translateY(-10px);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007bff;
+    font-weight: 700;
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+}
+
+.product-details img {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    margin-right: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-details img:hover {
+    transform: scale(1.05);
+}
+
+.product-info {
+    flex-grow: 1;
+}
+
+.product-info h2 {
+    font-size: 20px;
+    margin: 0 0 8px 0;
+    color: #333;
+}
+
+.product-info p {
+    margin: 8px 0;
+    color: #555;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 22px;
+    color: #28a745;
+}
+
+.payment-methods {
+    margin-bottom: 25px;
+}
+
+.payment-option {
+    margin-bottom: 15px;
+}
+
+.payment-option label {
+    margin-left: 12px;
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+}
+
+.payment-option input[type="radio"] {
+    display: none;
+}
+
+.payment-option input[type="radio"]:checked + label {
+    color: #007bff;
+    font-weight: 500;
+}
+
+.payment-option i {
+    font-size: 24px;
+    color: #007bff;
+}
+
+.payment-details form {
+    margin-top: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+.confirm-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.confirm-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
